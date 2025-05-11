@@ -1,0 +1,124 @@
+body {
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+header {
+    font-size: 2.5rem;
+    margin: 20px 0;
+    text-align: center;
+}
+.hamburger{
+    margin: 18px 0;
+}
+.nav-container {
+    display: flex;
+    justify-content: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+nav a, nav select {
+    text-decoration: none;
+    color: #007BFF;
+    font-size: 1.2rem;
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-family: 'Roboto Mono', monospace;
+}
+nav select {
+    padding-bottom: 5px;
+    padding-top: 0px;
+    margin-top: 0px;    
+    border: none;
+    color: #007BFF;
+}
+nav a:hover, nav select:hover {
+    text-decoration: underline;
+}
+.banner {
+    width: 70%;
+    height: auto;
+    display: block;
+    margin: 0 auto 0 auto;
+}
+section {
+    padding: 10%, 20%;
+    text-align: center;
+    display: none;
+}
+section.active {
+    display: block;
+}
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto 30px;
+}
+
+.fas.fa-globe {
+    color: #007BFF;
+  }
+
+@media (max-width: 750px) {
+    .hamburger {
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        height: 25px;
+        justify-content: space-around;
+        left: 20px;
+        position: absolute;
+        top: 20px;
+        width: 30px;
+    }
+    .hamburger div {
+        background-color: #007BFF;
+        border-radius: 4px;
+        height: 4px;
+        width: 100%;
+    }
+    nav {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #f5f5f5;
+        width: 100%;
+        padding: 15px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    nav.show {
+        display: flex;
+    }
+    nav a, nav {
+        font-size: 1rem;
+        margin: 3px 0px;
+    }
+    .banner {
+        width: 100%;
+        height: auto;
+        margin: 0 auto 20px auto;
+    }
+    section {
+        padding: 0px 10px 10px 0px;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    p {
+        font-size: 1rem;
+    }
+}
