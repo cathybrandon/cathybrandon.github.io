@@ -202,6 +202,13 @@ p {
   text-decoration: none;
 }
 
+@media (width <= 750px) {
+  #gallery-content a{
+    flex: 1 0 calc(33.33% - 10px); /* 4 per row */
+    max-width: calc(33.33% - 10px);
+  }
+}
+
 #gallery-content{
   display: flex;
   flex-wrap: wrap;
