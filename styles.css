@@ -166,7 +166,7 @@ section p{
 
 @media (width <= 750px) {
   section {
-      padding: 0 10px 10px 0;
+      padding: 0 10px 10rem 0;
   }
 }
 
