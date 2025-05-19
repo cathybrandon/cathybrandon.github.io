@@ -5,63 +5,182 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cathy & Brandon</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
+    <link rel="icon" href="drum_favicon.ico" type="image/x-icon">
 </head>
 <body>
 <header>
-    <div class="hamburger" onclick="toggleMenu()">☰</div>
-    <div class="title">Cathy & Brandon</div>
+    <div id="hamburger" onclick="toggleMenu()">☰</div>
+    <div class="title">
+      Cathy & Brandon
+    </div>
 </header>
 <div class="nav-container">
     <nav id="navbar">
-        <a onclick="showSection('home')" id="nav-home">Home</a>
-        <a onclick="showSection('our-story')" id="nav-our-story">Our Story</a>
-        <a onclick="showSection('wedding-party')" id="nav-wedding-party">Wedding Party</a>
-        <a onclick="showSection('schedule')" id="nav-schedule">Schedule</a>
-        <a onclick="showSection('faq')" id="nav-faq">FAQ</a>
+        <a onclick="showSection('home')" id="nav-home" href="#home" style="text-decoration: underline; color:#7b4f2c">Home</a>
+        <a onclick="showSection('our-story')" id="nav-our-story" href="#our-story">Our Story</a>
+        <a onclick="showSection('wedding')" id="nav-wedding" href="#wedding">Wedding</a>
+        <a onclick="showSection('gallery')" id="nav-gallery" href="#gallery">Gallery</a>
+        <a onclick="showSection('faq')" id="nav-faq" href="#faq">FAQ</a>
     </nav>
 </div>
 
-<img src="img/italian.jpg" alt="Banner Image" class="banner">
+<img src="img/winery.jpeg" alt="Banner Image" class="banner">
 
-<section id="home" class="active">
-    <h2 id="home-title">Home</h2>
-    <p id="home-text">Welcome to our special celebration! We are so excited to share this journey with you.</p>
+<section id="home" class="active" style="padding-top:3rem;">
+  <h3 style="font-size: 2.85rem; font-family: 'Dancing Script', monospace; padding-bottom: 0;" id="wedding-date1">Cathy Wang <br/>&<br/>Brandon Drumheller</h3>
+  <h3 style="font-size: 1.65rem; font-family: 'Montserrat Alternates';" id="wedding-date">06.06.2026</h3>
+  <h3 style="font-size: 1.35rem; font-family: 'Montserrat Alternates';" id="wedding-date">Sunol, California</h3>
+  <div id="countdown" style="font-size: 1.25rem;"></div>
 </section>
 
 <section id="our-story">
     <h2 id="story-title">Our Story</h2>
-    <p style="text-align: left"
-    ="story-text">From our first meeting to our engagement, here's a glimpse into our love story.</p>
+    <p id="story-text">Cathy and Brandon met through Bumble in 2022. The two unknowingly showed up in matching blue outfits to their first date at <a href="https://maps.app.goo.gl/PNEqEw9daRoQH9KS6" target="_blank"> Suju's</a> in Fremont, California.</p>
+    <p>Over coffee and conversation, something just clicked. That one afternoon turned into countless more, from weekend adventures to late-night snacks and everything in between.</p>
+    <p>In April 2025, they got engaged at Bridalveil Fall in Yosemite—because what better place to lock it in than somewhere breathtaking.</p>
 </section>
 
-<section id="wedding-party">
-    <h2 id="party-title">Wedding Party</h2>
-    <p id="party-text">Meet the amazing friends and family who are standing by our side on our big day.</p>
+<section id="wedding">
+    <h2 id="party-title">Wedding</h2>
+    <p id="party-text">The cermony will be held in Sunol, California. More details to come as we approach the big day!</p>
 </section>
 
-<section id="schedule">
-    <h2 id="schedule-title">Schedule</h2>
-    <p id="schedule-text">Find all the details for the ceremony, reception, and other events we have planned.</p>
+<section id="gallery">
+    <h2 id="schedule-title">Gallery</h2>
+    <div id="gallery-content">
+      <a data-fslightbox="gallery" data-type="image" href="img/italian.jpg">
+        <img loading="lazy" src="img/italian.jpg" alt="Napa valley">
+      </a>
+
+      <a data-fslightbox="gallery" data-type="image" href="img/awahnee.jpeg">
+        <img loading="lazy" src="img/awahnee.jpeg" alt="Awahnee hotel">
+      </a>
+
+      <a data-fslightbox="gallery" data-type="image" href="img/nyc.jpg">
+        <img loading="lazy" src="img/nyc.jpg" alt="NYC">
+      </a>
+
+      <a data-fslightbox="gallery" data-type="image" href="img/cherries.jpg">
+        <img loading="lazy" src="img/cherries.jpg" alt="Cherry picking">
+      </a>
+
+      <a data-fslightbox="gallery" data-type="image" href="img/christmas-park.jpeg">
+        <img loading="lazy" src="img/christmas-park.jpeg" alt="Christmas in the partk">
+      </a>
+
+      <a data-fslightbox="gallery" data-type="image" href="img/christmas-tree.jpg">
+        <img loading="lazy" src="img/christmas-tree.jpg" alt="Christmas tree">
+      </a>
+
+      <a data-fslightbox="gallery" data-type="image" href="img/napa.jpg">
+        <img loading="lazy" src="img/napa.jpg" alt="Napa valley">
+      </a>
+
+      <a data-fslightbox="gallery" data-type="image" href="img/san-diego.jpg">
+        <img loading="lazy" src="img/san-diego.jpg" alt="Napa valley">
+      </a>
+
+      <a data-fslightbox="gallery" data-type="image" href="img/steak-house.jpeg">
+        <img loading="lazy" src="img/steak-house.jpeg" alt="Napa valley">
+      </a>
+
+      <a data-fslightbox="gallery" data-type="image" href="img/yosemite-woods.jpeg">
+        <img loading="lazy" src="img/yosemite-woods.jpeg" alt="Napa valley">
+      </a>
+    </div>
 </section>
 
 <section id="faq">
     <h2 id="faq-title">FAQ</h2>
-    <p id="faq-text">Have questions? We've got answers to help you prepare for the festivities.</p>
+    <div class="faq-container">
+      <div class="faq-card">
+        <h3 class="faq-question">What is the dress code?</h3>
+        <p class="faq-answer">Cocktail Attire: Sharp suits and chic cocktail dresses welcome.</p>
+      </div>
+      <div class="faq-card">
+        <h3 class="faq-question">Are kids or plus ones welcome?</h3>
+        <p class="faq-answer">We love your little ones, but this will be an adults-only celebration. Thanks for understanding! If your invitation included a plus one, we’d love for you to bring them! If you're unsure, feel free to reach out.</p>
+      </div>
+      <div class="faq-card">
+        <h3 class="faq-question">Is there a wedding registry?</h3>
+        <p class="faq-answer">Your presence is the greatest gift - we’re so grateful just to celebrate with you! For those who are feeling generous and wish to give, stay tuned for our registry.</p>
+      </div>
+      <div class="faq-card">
+        <h3 class="faq-question">What time should I arrive?</h3>
+        <p class="faq-answer">Doors open at 4:30. Please arrive 15 minutes before the ceremony begins to park and find your seat.</p>
+      </div>
+      <div class="faq-card">
+        <h3 class="faq-question">Is there parking available?</h3>
+        <p class="faq-answer">Yes, there's a parking lot on-site.</p>
+      </div>
+      <div class="faq-card">
+        <h3 class="faq-question">What’s the weather like?</h3>
+        <p class="faq-answer">Expect sunny skies and warm temperatures in June—outdoor ceremony-friendly attire recommended!</p>
+      </div>
+      <div class="faq-card">
+        <h3 class="faq-question">What should I do if I have dietary restrictions?</h3>
+        <p class="faq-answer">Please let us know on your RSVP — we will do their best to accommodate!</p>
+      </div>
+      <div class="faq-card">
+        <h3 class="faq-question">Can I take photos during the ceremony?</h3>
+        <p class="faq-answer">We’re having an unplugged ceremony—please keep phones tucked away until the reception!</p>
+      </div>
+      <div class="faq-card">
+        <h3 class="faq-question">Will your wedding be indoors or outdoors?</h3>
+        <p class="faq-answer"> Our afternoon ceremony will be outdoors, while cocktail hour and the reception will take place indoors.</p>
+      </div>
+      <div class="faq-card">
+        <h3 class="faq-question">Can I RSVP online or do I have to mail in an RSVP card?</h3>
+        <p class="faq-answer">Check back later for instructions.</p>
+      </div>
+      <div class="faq-card">
+        <h3 class="faq-question">What date should I RSVP by?</h3>
+        <p class="faq-answer">We'll have more details to share as we get closer to the event.</p>
+      </div>
+      <div class="faq-card">
+        <h3 class="faq-question">Have you reserved blocks of rooms at one or more hotels?</h3>
+        <p class="faq-answer">We have reserved a room block at DoubleTree by Hilton Hotel Newark - Fremont. We'll have additional details to share in the future.</p>
+      </div>
+      <div class="faq-card">
+        <h3 class="faq-question">What are my transportation options?</h3>
+        <p class="faq-answer">There is a parking lot on-site. You can drive or use a ride sharing app.</p>
+      </div>
+    </div>
 </section>
 
 <script>
-    function showSection(id) {
-        document.querySelectorAll('section').forEach(section => {
-            section.classList.remove('active');
-        });
-        document.getElementById(id).classList.add('active');
-        document.getElementById('navbar').classList.remove('show');
-    }
+  function showSection(id) {
+    document.querySelectorAll('section').forEach(section => {
+        section.classList.remove('active');
+    });
+    document.getElementById(id).classList.add('active');
+    document.getElementById('navbar').classList.remove('show');
+    document.getElementById('hamburger').classList.remove('hidden');
+  }
 
-    function toggleMenu() {
-        document.getElementById('navbar').classList.toggle('show');
+  function toggleMenu() {
+    document.getElementById('navbar').classList.toggle('show');
+    document.getElementById('hamburger').classList.toggle('hidden');
+  }
+
+  const seconds_left = new Date("Jun 6, 2026 17:00:00").getTime() - new Date().getTime();
+  const days_left = Math.floor(seconds_left / (1000 * 60 * 60 * 24));
+
+  document.getElementById("countdown").innerHTML = days_left + " days to go";
+
+  function handleHashChange() {
+    const hash = window.location.hash.substring(1);
+    if (hash && document.getElementById(hash)) {
+      showSection(hash);
     }
+  }
+
+  window.addEventListener('load', handleHashChange);
+</script>
+<script src="scripts/fslightbox.js">
 </script>
 </body>
 </html>

@@ -1,0 +1,7 @@
+# Node.js
+node_modules/
+pnpm-lock.yaml
+
+# OS / Editor Junk
+.DS_Store
+Thumbs.db
