@@ -166,7 +166,7 @@ section p{
 
 @media (width <= 750px) {
   section {
-      padding: 0 10px 10rem 0;
+      padding: 0 1rem 10rem 1rem;
   }
 }
 
@@ -204,7 +204,7 @@ p {
 
 @media (width <= 750px) {
   #gallery-content a{
-    flex: 1 0 calc(33.33% - 10px); /* 4 per row */
+    flex: 1 0 calc(33.33% - 10px); /* 3 per row */
     max-width: calc(33.33% - 10px);
   }
 }
@@ -248,7 +248,7 @@ h4 {
 
 .faq-container {
   max-width: 800px;
-  margin: 0 auto;
+  margin: auto;
 }
 
 .faq-card {
