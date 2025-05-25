@@ -19,7 +19,7 @@
 </header>
 <div class="nav-container">
     <nav id="navbar">
-        <a onclick="showSection('home')" id="nav-home" href="#home" style="text-decoration: underline; color:#7b4f2c">Home</a>
+        <a onclick="showSection('home')" id="nav-home" href="#home">Home</a>
         <a onclick="showSection('our-story')" id="nav-our-story" href="#our-story">Our Story</a>
         <a onclick="showSection('wedding')" id="nav-wedding" href="#wedding">Wedding</a>
         <a onclick="showSection('gallery')" id="nav-gallery" href="#gallery">Gallery</a>
@@ -30,10 +30,16 @@
 <img src="img/winery.jpeg" alt="Banner Image" class="banner">
 
 <section id="home" class="active" style="padding-top:1rem;">
-  <h3 style="font-size: 2.85rem; font-family: 'Dancing Script', monospace; padding-bottom: 0;" id="wedding-date1">Cathy Wang <br/>&<br/>Brandon Drumheller</h3>
-  <h3 style="font-size: 1.65rem; font-family: 'Montserrat Alternates';" id="wedding-date">06.06.2026</h3>
-  <h3 style="font-size: 1.35rem; font-family: 'Montserrat Alternates';" id="wedding-date">Sunol, California</h3>
-  <div id="countdown" style="font-size: 1.25rem;"></div>
+  <div class="flower-frame">
+    <img src="img/flowers_left.png" class="flower left" alt="Left flowers" loading="lazy">
+    <div>
+      <h3 style="font-size: 2.85rem; font-family: 'Dancing Script', monospace; padding-bottom: 0;" id="wedding-date1">Cathy Wang <br/>&<br/>Brandon Drumheller</h3>
+      <h3 style="font-size: 1.65rem; font-family: 'Montserrat Alternates';" id="wedding-date">06.06.2026</h3>
+      <h3 style="font-size: 1.35rem; font-family: 'Montserrat Alternates';" id="wedding-date">Sunol, California</h3>
+      <div id="countdown" style="font-size: 1.25rem;"></div>
+    </div>
+    <img src="img/flowers_right.png" class="flower right" alt="Right flowers" loading="lazy">
+  </div>
 </section>
 
 <section id="our-story">
@@ -156,7 +162,11 @@
     document.querySelectorAll('section').forEach(section => {
         section.classList.remove('active');
     });
+    document.querySelectorAll('a').forEach(link => {
+        link.classList.remove('current_page');
+    });
     document.getElementById(id).classList.add('active');
+    document.getElementById('nav-'+id).classList.add('current_page');
     document.getElementById('navbar').classList.remove('show');
     document.getElementById('hamburger').classList.remove('hidden');
   }
@@ -175,7 +185,9 @@
     const hash = window.location.hash.substring(1);
     if (hash && document.getElementById(hash)) {
       showSection(hash);
-    }
+      return;
+    } 
+    showSection('home');
   }
 
   window.addEventListener('load', handleHashChange);
