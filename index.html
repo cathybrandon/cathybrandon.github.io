@@ -12,6 +12,7 @@
 </head>
 <body>
 <header>
+    <div id="petal-container"></div>
     <div id="hamburger" onclick="toggleMenu()">☰</div>
     <div class="title">
       Cathy & Brandon
@@ -191,6 +192,49 @@
   }
 
   window.addEventListener('load', handleHashChange);
+
+  function spawnPetals(count = 100) {
+    const container = document.body;
+
+    for (let i = 0; i < count; i++) {
+      const petal = document.createElement('img');
+      petal.src = 'img/flower_small.png';
+      petal.className = 'petal';
+      petal.style.left = Math.random() * 100 + 'vw';
+      petal.style.animationDuration = 2 + Math.random() * 3 + 's';
+      petal.style.transform = `rotate(${Math.random() * 360}deg)`;
+      container.appendChild(petal);
+
+      setTimeout(() => container.removeChild(petal), 6000);
+    }
+  }
+
+  let lastX, lastY, lastZ;
+  let shakeThreshold = 15;
+  let lastTime = new Date();
+
+  window.addEventListener('devicemotion', function (e) {
+    let acc = e.accelerationIncludingGravity;
+    if (!acc) return;
+
+    let currentTime = new Date();
+    if ((currentTime - lastTime) < 100) return;
+
+    let deltaX = acc.x - lastX;
+    let deltaY = acc.y - lastY;
+    let deltaZ = acc.z - lastZ;
+
+    let speed = Math.abs(deltaX + deltaY + deltaZ);
+    if (speed > shakeThreshold) {
+      spawnPetals();
+    }
+
+    lastX = acc.x;
+    lastY = acc.y;
+    lastZ = acc.z;
+    lastTime = currentTime;
+});
+
 </script>
 <script src="scripts/fslightbox.js">
 </script>

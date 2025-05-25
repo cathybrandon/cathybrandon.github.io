@@ -317,3 +317,39 @@ h4 {
     width: 0;
   }
 }
+
+#petal-container {
+  padding: 0%;
+  position: fixed; /* So it stays on top of all content */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh; /* Viewport height */
+  pointer-events: none; /* Doesn't block interactions */
+  overflow: hidden;
+  z-index: 9999;
+}
+
+.petal {
+  position: absolute;
+  top: 0;
+  width: 30px;
+  height: auto;
+  animation: fall linear forwards;
+  opacity: 0.9;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(0) translateX(0) rotate(0deg);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(50vh) translateX(10px) rotate(180deg);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(100vh) translateX(-10px) rotate(360deg);
+    opacity: 0;
+  }
+}
