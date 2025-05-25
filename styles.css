@@ -309,5 +309,6 @@ h4 {
 @media (width <= 500px) {
   .flower{
     visibility: hidden;
+    width: 0;
   }
 }
