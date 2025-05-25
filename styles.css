@@ -57,6 +57,11 @@ section h2{
     font-weight: bold;
     text-align: right;
   }
+
+  #home {
+    width: 98%;
+    padding-left: 0%;
+  }
 }
 
 .nav-container {
