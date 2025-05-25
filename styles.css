@@ -196,6 +196,11 @@ p {
     }
 }
 
+#gallery{
+  max-width: 1200px;
+  margin: auto;
+}
+
 #gallery-content a{
   flex: 1 0 calc(25% - 10px); /* 4 per row */
   max-width: calc(25% - 10px);
