@@ -15,7 +15,7 @@ header {
   padding-left: 1rem;
 }
 
-#wedding-date {
+.wedding-date {
   font-size: 1.5rem;
 }
 
@@ -30,11 +30,7 @@ header {
   display: none;
 }
 
-@media (width <=750px) {
-  #hamburger {
-    display: flex;
-  }
-}
+
 
 section h2 {
   text-decoration: underline;
@@ -50,19 +46,7 @@ section h2 {
 }
 
 
-@media (width <=750px) {
-  .title {
-    width: 95%;
-    font-size: 2rem;
-    font-weight: bold;
-    text-align: right;
-  }
 
-  #home {
-    width: 98%;
-    padding-left: 0%;
-  }
-}
 
 .nav-container {
   display: flex;
@@ -75,11 +59,7 @@ section h2 {
   padding-right: 2rem;
 }
 
-@media (width <=750px) {
-  .nav-container {
-    margin-bottom: 0;
-  }
-}
+
 
 nav {
   display: flex;
@@ -88,44 +68,7 @@ nav {
   flex-wrap: wrap;
 }
 
-@media (width <=750px) {
-  nav {
-    display: none;
-    flex-direction: column;
-    align-items: flex-start;
-    vertical-align: top;
-    position: fixed;
-    justify-content: start;
-    top: 0;
-    left: 0;
-    background-color: #FAF5E9;
-    width: 100%;
-    height: 100%;
-    padding: 15px;
-    box-shadow: 0 2px 5px rgb(0 0 0 / 10%);
-  }
 
-  nav.show {
-    display: flex;
-  }
-
-  nav a,
-  nav {
-    font-size: 1rem;
-    margin: 3px 0;
-  }
-
-  nav::after {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 2px;
-    background-color: #7b4f2c;
-    /* Theme brown */
-    margin-top: 1rem;
-    opacity: 0.5;
-  }
-}
 
 nav a,
 nav select {
@@ -158,13 +101,7 @@ nav select:hover {
   margin: 0 auto;
 }
 
-@media (width <=750px) {
-  .banner {
-    width: 100%;
-    height: auto;
-    margin: 0 auto;
-  }
-}
+
 
 section {
   padding-left: 5%;
@@ -183,11 +120,7 @@ section p {
   font-size: 1rem;
 }
 
-@media (width <=750px) {
-  section {
-    padding: 0 1rem 10rem 1rem;
-  }
-}
+
 
 section.active {
   display: block;
@@ -205,18 +138,7 @@ p {
   margin: 0 auto 30px;
 }
 
-@media (width <=750px) {
 
-  h2,
-  .title {
-    font-size: 1.5rem;
-  }
-
-  p {
-    font-size: 1rem;
-    width: 95%;
-  }
-}
 
 
 
@@ -227,13 +149,7 @@ p {
   text-decoration: none;
 }
 
-@media (width <=750px) {
-  #gallery-content a {
-    flex: 1 0 calc(33.33% - 10px);
-    /* 3 per row */
-    max-width: calc(33.33% - 10px);
-  }
-}
+
 
 #gallery-content {
   display: flex;
@@ -388,6 +304,7 @@ h4 {
   flex-wrap: wrap;
   max-width: 800px;
   margin: 0 auto;
+  padding-top: 1em;
 }
 
 .party-side {
@@ -513,4 +430,114 @@ h4 {
 #travel .venue-container ul {
   margin-top: 0;
   margin-bottom: 1.5rem;
+}
+
+#home {
+  padding-top: 1rem;
+}
+
+.wedding-header-names {
+  font-size: 2.50rem;
+  font-family: 'Dancing Script', monospace;
+  padding-bottom: 0;
+}
+
+.wedding-date-header {
+  font-size: 1.65rem;
+  font-family: 'Montserrat Alternates';
+}
+
+.wedding-location-header {
+  font-size: 1.35rem;
+  font-family: 'Montserrat Alternates';
+}
+
+#countdown {
+  font-size: 1.25rem;
+}
+
+/* Consolidated Mobile Styles */
+@media (width <=750px) {
+  #hamburger {
+    display: flex;
+  }
+
+  .title {
+    width: 95%;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: right;
+  }
+
+  #home {
+    width: 98%;
+    padding-left: 0%;
+  }
+
+  .nav-container {
+    margin-bottom: 0;
+  }
+
+  nav {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    vertical-align: top;
+    position: fixed;
+    justify-content: start;
+    top: 0;
+    left: 0;
+    background-color: #FAF5E9;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgb(0 0 0 / 10%);
+  }
+
+  nav.show {
+    display: flex;
+  }
+
+  nav a,
+  nav {
+    font-size: 1rem;
+    margin: 3px 0;
+  }
+
+  nav::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #7b4f2c;
+    /* Theme brown */
+    margin-top: 1rem;
+    opacity: 0.5;
+  }
+
+  .banner {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  section {
+    padding: 0 1rem 10rem 1rem;
+  }
+
+  h2,
+  .title {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+    width: 95%;
+  }
+
+  #gallery-content a {
+    flex: 1 0 calc(33.33% - 10px);
+    /* 3 per row */
+    max-width: calc(33.33% - 10px);
+  }
 }

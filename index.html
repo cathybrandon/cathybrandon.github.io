@@ -15,7 +15,7 @@
 <body>
   <header>
     <div id="petal-container"></div>
-    <div id="hamburger" onclick="toggleMenu()">☰</div>
+    <div id="hamburger" onclick="toggleMenu()" role="button" aria-label="Toggle menu">☰</div>
     <div class="title">
       Cathy & Brandon
     </div>
@@ -26,22 +26,21 @@
       <a onclick="showSection('our-story')" id="nav-our-story" href="#our-story">Our Story</a>
       <a onclick="showSection('wedding')" id="nav-wedding" href="#wedding">The Big Day</a>
       <a onclick="showSection('travel')" id="nav-travel" href="#travel">Travel</a>
-
       <a onclick="showSection('faq')" id="nav-faq" href="#faq">FAQ</a>
     </nav>
   </div>
 
   <img src="img/winery.jpeg" alt="Banner Image" class="banner">
 
-  <section id="home" class="active" style="padding-top:1rem;">
+  <section id="home" class="active">
     <div class="flower-frame">
       <img src="img/flowers_left.png" class="flower left" alt="Left flowers" loading="lazy">
       <div>
-        <h3 style="font-size: 2.50rem; font-family: 'Dancing Script', monospace; padding-bottom: 0;" id="wedding-date1">
+        <h3 class="wedding-header-names" id="wedding-date1">
           Cathy Wang <br />&<br />Brandon Drumheller</h3>
-        <h3 style="font-size: 1.65rem; font-family: 'Montserrat Alternates';" id="wedding-date">06.06.2026</h3>
-        <h3 style="font-size: 1.35rem; font-family: 'Montserrat Alternates';" id="wedding-date">Sunol, California</h3>
-        <div id="countdown" style="font-size: 1.25rem;"></div>
+        <h3 class="wedding-date-header wedding-date">06.06.2026</h3>
+        <h3 class="wedding-location-header wedding-date">Sunol, California</h3>
+        <div id="countdown"></div>
       </div>
       <img src="img/flowers_right.png" class="flower right" alt="Right flowers" loading="lazy">
     </div>
@@ -50,7 +49,8 @@
   <section id="our-story">
     <h2 id="story-title">Our Story</h2>
     <p id="story-text">Cathy and Brandon met through Bumble in 2022. The two unknowingly showed up in matching blue
-      outfits to their first date at <a href="https://maps.app.goo.gl/PNEqEw9daRoQH9KS6" target="_blank"> Suju's</a> in
+      outfits to their first date at <a href="https://maps.app.goo.gl/PNEqEw9daRoQH9KS6" target="_blank"
+        rel="noopener noreferrer"> Suju's</a> in
       Fremont, California.</p>
     <p>Over coffee and conversation, something just clicked. That one afternoon turned into countless more, from weekend
       adventures to late-night snacks and everything in between.</p>
@@ -103,7 +103,8 @@
     <h2 id="party-title">The Big Day</h2>
 
     <p>Join us in the quiet town of Sunol for our wedding at the historic <a href="https://ellistonvineyards.com/"
-        target="_blank">Elliston Vineyards</a>. Originally the home of a San Francisco legend, this National Register
+        target="_blank" rel="noopener noreferrer">Elliston Vineyards</a>. Originally the home of a San Francisco legend,
+      this National Register
       of Historic Places estate features a stunning neo-Romanesque mansion and three acres of vines. We will be
       holding an outdoor ceremony on the lawn, followed by a cocktail hour on the patio and dinner and dancing in the
       Terrace Room. It's a peaceful, wine-country escape just a short drive from the bustle of the Bay Area.</p>
@@ -202,13 +203,14 @@
       <ul>
         <li><a
             href="https://www.google.com/maps/place/DoubleTree+by+Hilton+Hotel+Newark+-+Fremont/@37.5224308,-121.991995,19.15z/data=!4m18!1m8!3m7!1s0x808fc0aaeff112e9:0xbf88ea671ac420dd!2s39900+Balentine+Dr,+Newark,+CA+94560!3b1!8m2!3d37.522159!4d-121.9907529!16s%2Fg%2F11bw3xlgct!3m8!1s0x808fc0aaefd3ccbd:0x7b0cc71b43279927!5m2!4m1!1i2!8m2!3d37.5220652!4d-121.9906749!16s%2Fg%2F1tg50nst?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D"
-            target="_blank">39900 Balentine Drive, Newark, CA 94560</a></li>
+            target="_blank" rel="noopener noreferrer">39900 Balentine Drive, Newark, CA 94560</a></li>
       </ul>
       <p><strong>How to Book:</strong></p>
       <ul>
         <li><strong>Online:</strong> <a
             href="https://www.hilton.com/en/book/reservation/rooms/?ctyhocn=NWKBDDT&arrivalDate=2026-06-05&departureDate=2026-06-06&groupCode=91F&room1NumAdults=1"
-            target="_blank">Visit this special Hotel Booking Link</a> for the discounted group rate.</li>
+            target="_blank" rel="noopener noreferrer">Visit this special Hotel Booking Link</a> for the discounted group
+          rate.</li>
         <li><strong>By Phone:</strong> Call the hotel directly at <a href="tel:+15104908390">+1 510-490-8390</a> and
           mention group code <strong>91F</strong> for "Cathy and Brandon's Wedding".</li>
       </ul>
@@ -375,7 +377,8 @@
           We have a room block at the <strong>DoubleTree by Hilton Newark - Fremont</strong>.
           To book at our discounted rate, please use our <a
             href="https://www.hilton.com/en/book/reservation/rooms/?ctyhocn=NWKBDDT&arrivalDate=2026-06-05&departureDate=2026-06-06&groupCode=91F&room1NumAdults=1"
-            target="_blank">booking link</a> or call <a href="tel:+15104908390">+1 510-490-8390</a> and mention group
+            target="_blank" rel="noopener noreferrer">booking link</a> or call <a href="tel:+15104908390">+1
+            510-490-8390</a> and mention group
           code <strong>91F</strong>. Please book by <em>May 8, 2026</em> to secure the rate.
         </p>
       </div>
@@ -437,7 +440,7 @@
 
     window.addEventListener('load', handleHashChange);
 
-    function spawnPetals(count = 100) {
+    function spawnPetals(count = 50) {
       const container = document.body;
 
       for (let i = 0; i < count; i++) {
@@ -456,6 +459,7 @@
     let lastX, lastY, lastZ;
     let shakeThreshold = 15;
     let lastTime = new Date();
+    let lastSpawnTime = 0; // Throttle spawn events
 
     window.addEventListener('devicemotion', function (e) {
       let acc = e.accelerationIncludingGravity;
@@ -469,8 +473,11 @@
       let deltaZ = acc.z - lastZ;
 
       let speed = Math.abs(deltaX + deltaY + deltaZ);
-      if (speed > shakeThreshold) {
+
+      // Throttle spawning to once every 3 seconds
+      if (speed > shakeThreshold && (currentTime - lastSpawnTime > 3000)) {
         spawnPetals();
+        lastSpawnTime = currentTime;
       }
 
       lastX = acc.x;
