@@ -1,62 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cathy & Brandon</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap" rel="stylesheet">
-    <link href="styles.css" rel="stylesheet">
-    <link rel="icon" href="drum_favicon.ico" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cathy & Brandon</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+  <link rel="icon" href="drum_favicon.ico" type="image/x-icon">
 </head>
+
 <body>
-<header>
+  <header>
     <div id="petal-container"></div>
     <div id="hamburger" onclick="toggleMenu()">☰</div>
     <div class="title">
       Cathy & Brandon
     </div>
-</header>
-<div class="nav-container">
+  </header>
+  <div class="nav-container">
     <nav id="navbar">
-        <a onclick="showSection('home')" id="nav-home" href="#home">Home</a>
-        <a onclick="showSection('our-story')" id="nav-our-story" href="#our-story">Our Story</a>
-        <a onclick="showSection('wedding')" id="nav-wedding" href="#wedding">Wedding</a>
-        <a onclick="showSection('gallery')" id="nav-gallery" href="#gallery">Gallery</a>
-        <a onclick="showSection('faq')" id="nav-faq" href="#faq">FAQ</a>
+      <a onclick="showSection('home')" id="nav-home" href="#home">Home</a>
+      <a onclick="showSection('our-story')" id="nav-our-story" href="#our-story">Our Story</a>
+      <a onclick="showSection('wedding')" id="nav-wedding" href="#wedding">The Big Day</a>
+      <a onclick="showSection('travel')" id="nav-travel" href="#travel">Travel</a>
+
+      <a onclick="showSection('faq')" id="nav-faq" href="#faq">FAQ</a>
     </nav>
-</div>
-
-<img src="img/winery.jpeg" alt="Banner Image" class="banner">
-
-<section id="home" class="active" style="padding-top:1rem;">
-  <div class="flower-frame">
-    <img src="img/flowers_left.png" class="flower left" alt="Left flowers" loading="lazy">
-    <div>
-      <h3 style="font-size: 2.50rem; font-family: 'Dancing Script', monospace; padding-bottom: 0;" id="wedding-date1">Cathy Wang <br/>&<br/>Brandon Drumheller</h3>
-      <h3 style="font-size: 1.65rem; font-family: 'Montserrat Alternates';" id="wedding-date">06.06.2026</h3>
-      <h3 style="font-size: 1.35rem; font-family: 'Montserrat Alternates';" id="wedding-date">Sunol, California</h3>
-      <div id="countdown" style="font-size: 1.25rem;"></div>
-    </div>
-    <img src="img/flowers_right.png" class="flower right" alt="Right flowers" loading="lazy">
   </div>
-</section>
 
-<section id="our-story">
+  <img src="img/winery.jpeg" alt="Banner Image" class="banner">
+
+  <section id="home" class="active" style="padding-top:1rem;">
+    <div class="flower-frame">
+      <img src="img/flowers_left.png" class="flower left" alt="Left flowers" loading="lazy">
+      <div>
+        <h3 style="font-size: 2.50rem; font-family: 'Dancing Script', monospace; padding-bottom: 0;" id="wedding-date1">
+          Cathy Wang <br />&<br />Brandon Drumheller</h3>
+        <h3 style="font-size: 1.65rem; font-family: 'Montserrat Alternates';" id="wedding-date">06.06.2026</h3>
+        <h3 style="font-size: 1.35rem; font-family: 'Montserrat Alternates';" id="wedding-date">Sunol, California</h3>
+        <div id="countdown" style="font-size: 1.25rem;"></div>
+      </div>
+      <img src="img/flowers_right.png" class="flower right" alt="Right flowers" loading="lazy">
+    </div>
+  </section>
+
+  <section id="our-story">
     <h2 id="story-title">Our Story</h2>
-    <p id="story-text">Cathy and Brandon met through Bumble in 2022. The two unknowingly showed up in matching blue outfits to their first date at <a href="https://maps.app.goo.gl/PNEqEw9daRoQH9KS6" target="_blank"> Suju's</a> in Fremont, California.</p>
-    <p>Over coffee and conversation, something just clicked. That one afternoon turned into countless more, from weekend adventures to late-night snacks and everything in between.</p>
-    <p>In April 2025, they got engaged at Bridalveil Falls in Yosemite—because what better place to lock it in than somewhere breathtaking.</p>
-</section>
-
-<section id="wedding">
-    <h2 id="party-title">Wedding</h2>
-    <p id="party-text">The cermony will be held in Sunol, California. More details to come as we approach the big day!</p>
-</section>
-
-<section id="gallery">
-    <h2 id="schedule-title">Gallery</h2>
+    <p id="story-text">Cathy and Brandon met through Bumble in 2022. The two unknowingly showed up in matching blue
+      outfits to their first date at <a href="https://maps.app.goo.gl/PNEqEw9daRoQH9KS6" target="_blank"> Suju's</a> in
+      Fremont, California.</p>
+    <p>Over coffee and conversation, something just clicked. That one afternoon turned into countless more, from weekend
+      adventures to late-night snacks and everything in between.</p>
+    <p>In April 2025, they got engaged at Bridalveil Falls in Yosemite—because what better place to lock it in than
+      somewhere breathtaking.</p>
     <div id="gallery-content">
       <a data-fslightbox="gallery" data-type="image" href="img/italian.jpg">
         <img loading="lazy" src="img/italian.jpg" alt="Napa valley">
@@ -98,145 +97,391 @@
         <img loading="lazy" src="img/yosemite-woods.jpeg" alt="Napa valley">
       </a>
     </div>
-</section>
+  </section>
 
-<section id="faq">
+  <section id="wedding">
+    <h2 id="party-title">The Big Day</h2>
+
+    <p>Join us in the quiet town of Sunol for our wedding at the historic <a href="https://ellistonvineyards.com/"
+        target="_blank">Elliston Vineyards</a>. Originally the home of a San Francisco legend, this National Register
+      of Historic Places estate features a stunning neo-Romanesque mansion and three acres of vines. We will be
+      holding an outdoor ceremony on the lawn, followed by a cocktail hour on the patio and dinner and dancing in the
+      Terrace Room. It's a peaceful, wine-country escape just a short drive from the bustle of the Bay Area.</p>
+
+    <div class="venue-container">
+      <h3>Location</h3>
+      <p><b>Elliston Vineyards:</b> <a
+          href="https://www.google.com/maps/place/Elliston+Vineyards/@37.6014495,-121.8902393,19.47z/data=!4m15!1m8!3m7!1s0x808fc23b2c646427:0x345e8027166cdf3a!2s463+Kilkare+Rd,+Sunol,+CA+94586!3b1!8m2!3d37.6010315!4d-121.8902357!16s%2Fg%2F11bw508zxj!3m5!1s0x808fc224d3392839:0xa1aafcd70ee04256!8m2!3d37.601193!4d-121.890478!16s%2Fg%2F1thy00x9?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D"
+          target="_blank">463 Kilkare Rd, Sunol, CA 94586</a>
+        <br /> <br />
+        <strong>Shuttle:</strong> A complimentary shuttle will depart the DoubleTree lobby at 3:45 PM and return
+        from
+        the venue at 10:00 PM.
+        <br /> <br />
+        <strong>Driving:</strong> There is a parking lot on-site at Elliston Vineyards for those choosing to drive
+        or
+        use ride-sharing apps.
+      </p>
+    </div>
+
+    <h3>Schedule</h3>
+    <!-- <div class="schedule-container">
+      <div class="schedule-item">
+        <span class="time">4:30 PM</span>
+        <span class="event">Doors Open & Seating Begins</span>
+      </div>
+      <div class="schedule-item">
+        <span class="time">5:00 PM</span>
+        <span class="event">Ceremony Starts</span>
+      </div>
+      <div class="schedule-item">
+        <span class="time">5:30 PM</span>
+        <span class="event">Cocktail Hour</span>
+      </div>
+      <div class="schedule-item">
+        <span class="time">6:30 PM</span>
+        <span class="event">Reception & Dinner</span>
+      </div>
+    </div> -->
+
+    <p>Doors open at <em>4:30 PM</em>. The ceremony begins promptly at <em>5:00 PM</em>. Please
+      arrive 15 minutes before the ceremony begins to park and be seated. Stay tuned for a more detailed itinerary!</p>
+
+    <!-- <div class="download-section">
+      <a href="#" class="download-btn" download>Download Schedule (PDF)</a>
+    </div> -->
+
+    <h3>Wedding Party</h3>
+    <div class="wedding-party-container">
+      <div class="party-side">
+        <h4>Bridesmaids</h4>
+        <ul>
+          <li>Tina Zhao (Maid of Honor)</li>
+          <li>Amanda Drumheller</li>
+          <li>Megan Drumheller</li>
+          <li>Melody Zheng</li>
+        </ul>
+      </div>
+
+      <div class="party-side">
+        <h4>Groomsmen</h4>
+        <ul>
+          <li>Brian Grohe (Best Man)</li>
+          <li>David Kong</li>
+          <li>Hunter Lukk</li>
+          <li>Samuel Wenninger</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="travel">
+    <h2>Travel & Accommodations</h2>
+    <p>We are so grateful to our family and friends traveling from near and far to celebrate with us. To make your
+      journey to the East Bay as smooth as possible, we have gathered some helpful information on travel, lodging, and
+      local favorites.</p>
+
+    <h3>Airports</h3>
+    <p>For those flying in, there are multiple major airports that serve the San Francisco Bay Area. We recommend
+      checking
+      flights to find the best options for your schedule:</p>
+    <ul>
+      <li><strong>San Jose Mineta International Airport (SJC):</strong> This is usually the most convenient and easiest
+        airport for reaching Newark/Fremont, approximately 20–25 minutes. There is a complimentary shuttle service
+        between the airport and the DoubleTree by Hilton Hotel Newark - Fremont (see Accommodations for details).</li>
+      <li><strong>San Francisco International Airport (SFO):</strong> Approximately 40–50 minutes to Newark/Fremont. SFO
+        offers the most flight options but is further away and subject to bridge traffic.</li>
+    </ul>
+
+    <h3>Accommodations</h3>
+    <p>We have reserved a block of rooms for our guests at <strong class="booking-deadline">DoubleTree by Hilton Hotel
+        Newark - Fremont</strong>.</p><br>
+
+    <div class="venue-container">
+      <p><strong>Address:</strong></p>
+      <ul>
+        <li><a
+            href="https://www.google.com/maps/place/DoubleTree+by+Hilton+Hotel+Newark+-+Fremont/@37.5224308,-121.991995,19.15z/data=!4m18!1m8!3m7!1s0x808fc0aaeff112e9:0xbf88ea671ac420dd!2s39900+Balentine+Dr,+Newark,+CA+94560!3b1!8m2!3d37.522159!4d-121.9907529!16s%2Fg%2F11bw3xlgct!3m8!1s0x808fc0aaefd3ccbd:0x7b0cc71b43279927!5m2!4m1!1i2!8m2!3d37.5220652!4d-121.9906749!16s%2Fg%2F1tg50nst?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D"
+            target="_blank">39900 Balentine Drive, Newark, CA 94560</a></li>
+      </ul>
+      <p><strong>How to Book:</strong></p>
+      <ul>
+        <li><strong>Online:</strong> <a
+            href="https://www.hilton.com/en/book/reservation/rooms/?ctyhocn=NWKBDDT&arrivalDate=2026-06-05&departureDate=2026-06-06&groupCode=91F&room1NumAdults=1"
+            target="_blank">Visit this special Hotel Booking Link</a> for the discounted group rate.</li>
+        <li><strong>By Phone:</strong> Call the hotel directly at <a href="tel:+15104908390">+1 510-490-8390</a> and
+          mention group code <strong>91F</strong> for "Cathy and Brandon's Wedding".</li>
+      </ul>
+      <p><em>Note: Please book by <strong class="booking-deadline">Friday May 8th, 2026</strong> to receive the
+          discounted group rate.</em></p>
+    </div>
+
+    <h3>Day-of Transportation</h3>
+    <p>To allow our guests to celebrate fully and safely, we are providing a complimentary shuttle service between the
+      DoubleTree and Elliston Vineyards. Details to come as we finalize the schedule.</p>
+    <!-- <ul>
+      <li><strong>To the Wedding:</strong> The shuttle will depart from the DoubleTree lobby promptly at 3:45 PM.</li>
+      <li><strong>Returning:</strong> The shuttle will depart the venue at 10:00 PM to return guests to the hotel.</li>
+    </ul> -->
+    <p>Parking: If you choose to drive, there is ample complimentary parking available at Elliston Vineyards.</p>
+
+    <p>Ride Sharing: For those who'd prefer to leave the car behind, rideshare services like Uber and Lyft are easily
+      available in the area and can drop you off right at the venue.</p>
+
+    <h3>Local Favorites & Things to Do</h3>
+    <p class="favorites-intro">If you have some extra time to explore the area, here are a few of our favorite spots
+      near Newark and Sunol:</p>
+
+    <div class="wedding-party-container">
+      <div class="party-side">
+        <h4>Coffee & Sweets</h4>
+        <ul>
+          <li><strong>Suju's Coffee (Fremont/Newark):</strong> A beloved local staple with a cozy atmosphere, perfect
+            for a morning latte or a quick caffeine fix.</li>
+          <li><strong>Bun Appétit Donuts (Fremont):</strong> Gourmet, artisanal donuts with unique flavors like Guava
+            Cheesecake and Ube. Be sure to get there early—they sell out fast!</li>
+          <li><strong>See's Candies (Newark/Fremont):</strong> A legendary California chocolate shop founded in San
+            Francisco. Stop by for a famous "free sample" and grab a box of Bordeaux or Scotchmallows.</li>
+        </ul>
+
+        <h4>Lunch & Dinner</h4>
+        <ul>
+          <li><strong>Din Ding Dumpling House (Fremont):</strong> Famous for their handmade Xiao Long Bao (soup
+            dumplings) and fresh noodles. A must-visit for authentic Shanghainese cuisine.</li>
+          <li><strong>Happiness Hotpot (囍火锅):</strong> An authentic Chongqing-style hotpot experience. Be sure to visit
+            the self-service sauce bar to create your own signature dip!</li>
+          <li><strong>Ramen Nagi (Palo Alto/San Jose):</strong> Widely considered the best ramen in the Bay Area. You
+            can fully customize your bowl, from the richness of the broth to the spice level.</li>
+          <li><strong>Eataly Silicon Valley (Valley Fair):</strong> A massive three-story Italian marketplace. You can
+            shop for artisanal pastas, grab a quick espresso or gelato, or enjoy a full meal at <strong>Terra</strong>,
+            their beautiful rooftop restaurant.</li>
+          <li><strong>Giorgio’s Italian Food (San Jose/Milpitas):</strong> A beloved South Bay institution for over 50
+            years. This family-owned favorite is famous for its cozy atmosphere and generous "family-style" portions of
+            classic Italian comfort food and award-winning pizza.</li>
+          <li><strong>In-N-Out Burger (Multiple Locations):</strong> A legendary California institution. Known for its
+            simple menu and high-quality, never-frozen ingredients. Order a <strong>Double-Double</strong> and don't
+            forget to ask for your burger or fries <strong>"Animal Style"</strong> from the not-so-secret menu!</li>
+        </ul>
+      </div>
+      <div class="party-side">
+        <h4>Sightseeing & Nature</h4>
+        <ul>
+          <li><strong>Lake Elizabeth (Central Park):</strong> A beautiful 80-acre lake in the heart of Fremont. It
+            features a lovely 2-mile walking path around the water with views of the Mission Peak hills.</li>
+          <li><strong>Sunol Regional Wilderness:</strong> A hidden gem for hiking. Highlights include "Little Yosemite,"
+            a scenic gorge with waterfalls and expansive views of the rolling hills.</li>
+          <li><strong>Coyote Hills Regional Park:</strong> Beautiful walking trails with views of the San Francisco Bay
+            and salt marshes.</li>
+          <li><strong>Mission Peak:</strong> For the adventurous! A challenging 3-mile hike with a "famous" pole at the
+            top and 360-degree views of the entire Bay Area.</li>
+          <li><strong>Santana Row & Valley Fair:</strong> A premier outdoor destination in San Jose for high-end
+            shopping, dining, and people-watching.</li>
+        </ul>
+
+        <h4>San Francisco Classics</h4>
+        <ul>
+          <li><strong>Ghirardelli Square & Pier 39:</strong> Iconic waterfront destinations for world-famous chocolate
+            sundaes, sea lions, and classic SF sourdough.</li>
+          <li><strong>Golden Gate Park:</strong> A massive urban oasis home to the Japanese Tea Garden, the de Young
+            Museum, and the California Academy of Sciences.</li>
+          <li><strong>Union Square:</strong> The vibrant heart of downtown SF, famous for luxury shopping, historic
+            theaters, and the iconic cable car turnaround at Powell Street.</li>
+        </ul>
+
+        <h4>California Day Trips</h4>
+        <ul>
+          <li><strong>Napa Valley:</strong> About 1.5 hours north. We highly recommend <strong>Castello di
+              Amorosa</strong>, an authentic 13th-century style Tuscan castle and winery.</li>
+          <li><strong>Monterey & Carmel:</strong> About 1.5 hours south. Enjoy the world-class Monterey Bay Aquarium and
+            the scenic 17-Mile Drive.</li>
+          <li><strong>Yosemite National Park:</strong> Approximately 3.5 to 4 hours away. A world-renowned destination
+            for breathtaking granite cliffs, giant sequoias, and waterfalls.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq">
     <h2 id="faq-title">FAQ</h2>
     <div class="faq-container">
+
+      <h3 class="faq-section-title">Ceremony & Logistics</h3>
+
+      <div class="faq-card">
+        <h3 class="faq-question">What time should I arrive?</h3>
+        <p class="faq-answer">Doors open at <em>4:30 PM</em>. The ceremony begins promptly at <em>5:00 PM</em>. Please
+          arrive 15 minutes before the ceremony begins to park and be seated.</p>
+      </div>
+
+      <div class="faq-card">
+        <h3 class="faq-question">Will your wedding be indoors or outdoors?</h3>
+        <p class="faq-answer">Our afternoon ceremony and cocktail hour will be outdoors, while the reception will take
+          place indoors.</p>
+      </div>
+
+      <div class="faq-card">
+        <h3 class="faq-question">Can I take photos during the ceremony?</h3>
+        <p class="faq-answer">We’re having an unplugged ceremony. Please keep phones tucked away until the reception! We
+          will have two professional photographers and a videographer to capture the moment.</p>
+      </div>
+
+      <h3 class="faq-section-title">Guest Information</h3>
+
+      <div class="faq-card">
+        <h3 class="faq-question">Can I bring a plus one?</h3>
+        <p class="faq-answer">Your invitation will indicate the number of seats we’ve reserved in your honor. We look
+          forward to celebrating with you!</p>
+      </div>
+
+      <div class="faq-card">
+        <h3 class="faq-question">Are kids welcome?</h3>
+        <p class="faq-answer">We love your little ones, but this will be an adults-only celebration. Thank you for
+          understanding!</p>
+      </div>
+
+      <div class="faq-card">
+        <h3 class="faq-question">What should I do if I have dietary restrictions?</h3>
+        <p class="faq-answer">Please let us know on your RSVP — we will do our best to accommodate!</p>
+      </div>
+
+      <h3 class="faq-section-title">Attire & Weather</h3>
+
       <div class="faq-card">
         <h3 class="faq-question">What is the dress code?</h3>
         <p class="faq-answer">Cocktail Attire: Sharp suits and chic cocktail dresses welcome.</p>
       </div>
-      <div class="faq-card">
-        <h3 class="faq-question">Are kids or plus ones welcome?</h3>
-        <p class="faq-answer">We love your little ones, but this will be an adults-only celebration. Thanks for understanding! If your invitation included a plus one, we’d love for you to bring them! If you're unsure, feel free to reach out.</p>
-      </div>
-      <div class="faq-card">
-        <h3 class="faq-question">Is there a wedding registry?</h3>
-        <p class="faq-answer">Your presence is the greatest gift - we’re so grateful just to celebrate with you! For those who are feeling generous and wish to give, stay tuned for our registry.</p>
-      </div>
-      <div class="faq-card">
-        <h3 class="faq-question">What time should I arrive?</h3>
-        <p class="faq-answer">Doors open at 4:30. Please arrive 15 minutes before the ceremony begins to park and find your seat.</p>
-      </div>
-      <div class="faq-card">
-        <h3 class="faq-question">Is there parking available?</h3>
-        <p class="faq-answer">Yes, there's a parking lot on-site.</p>
-      </div>
+
       <div class="faq-card">
         <h3 class="faq-question">What’s the weather like?</h3>
-        <p class="faq-answer">Expect sunny skies and warm temperatures in June—outdoor ceremony-friendly attire recommended!</p>
+        <p class="faq-answer">Expect sunny skies and warm temperatures in June. Outdoor ceremony-friendly attire is
+          recommended!</p>
       </div>
+
+      <h3 class="faq-section-title">Travel & Accommodations</h3>
+
       <div class="faq-card">
-        <h3 class="faq-question">What should I do if I have dietary restrictions?</h3>
-        <p class="faq-answer">Please let us know on your RSVP — we will do their best to accommodate!</p>
+        <h3 class="faq-question">Which airport should I fly into?</h3>
+        <p class="faq-answer">
+          <strong>San Jose (SJC):</strong> The most convenient option, about 20–25 mins from the east bay.<br><br>
+          <strong>San Francisco (SFO):</strong> About 40–50 mins from the east bay; offers more flights but is subject
+          to
+          bridge traffic.
+        </p>
       </div>
+
       <div class="faq-card">
-        <h3 class="faq-question">Can I take photos during the ceremony?</h3>
-        <p class="faq-answer">We’re having an unplugged ceremony—please keep phones tucked away until the reception!</p>
+        <h3 class="faq-question">Where should I stay?</h3>
+        <p class="faq-answer">
+          We have a room block at the <strong>DoubleTree by Hilton Newark - Fremont</strong>.
+          To book at our discounted rate, please use our <a
+            href="https://www.hilton.com/en/book/reservation/rooms/?ctyhocn=NWKBDDT&arrivalDate=2026-06-05&departureDate=2026-06-06&groupCode=91F&room1NumAdults=1"
+            target="_blank">booking link</a> or call <a href="tel:+15104908390">+1 510-490-8390</a> and mention group
+          code <strong>91F</strong>. Please book by <em>May 8, 2026</em> to secure the rate.
+        </p>
       </div>
+
       <div class="faq-card">
-        <h3 class="faq-question">Will your wedding be indoors or outdoors?</h3>
-        <p class="faq-answer"> Our afternoon ceremony will be outdoors, while cocktail hour and the reception will take place indoors.</p>
+        <h3 class="faq-question">How do I get to the venue?</h3>
+        <p class="faq-answer">
+          <strong>Shuttle:</strong> A complimentary shuttle will depart the DoubleTree lobby. Detailed depature times to
+          follow.
+          <br /> <br />
+          <strong>Driving:</strong> There is a parking lot on-site at Elliston Vineyards for those choosing to drive
+          or
+          use ride-sharing apps.
+        </p>
       </div>
+      <h3 class="faq-section-title">Registry</h3>
+
       <div class="faq-card">
-        <h3 class="faq-question">Can I RSVP online or do I have to mail in an RSVP card?</h3>
-        <p class="faq-answer">Check back later for instructions.</p>
+        <h3 class="faq-question">Is there a wedding registry?</h3>
+        <p class="faq-answer">Your presence is the greatest gift. We're so grateful just to celebrate with you! For
+          those who are feeling generous and wish to give, stay tuned for our registry.</p>
       </div>
-      <div class="faq-card">
-        <h3 class="faq-question">What date should I RSVP by?</h3>
-        <p class="faq-answer">We'll have more details to share as we get closer to the event.</p>
-      </div>
-      <div class="faq-card">
-        <h3 class="faq-question">Have you reserved blocks of rooms at one or more hotels?</h3>
-        <p class="faq-answer">We have reserved a room block at DoubleTree by Hilton Hotel Newark - Fremont. We'll have additional details to share in the future.</p>
-      </div>
-      <div class="faq-card">
-        <h3 class="faq-question">What are my transportation options?</h3>
-        <p class="faq-answer">There is a parking lot on-site. You can drive or use a ride sharing app.</p>
-      </div>
+
     </div>
-</section>
+  </section>
 
-<script>
-  function showSection(id) {
-    document.querySelectorAll('section').forEach(section => {
+  <script>
+    function showSection(id) {
+      document.querySelectorAll('section').forEach(section => {
         section.classList.remove('active');
-    });
-    document.querySelectorAll('a').forEach(link => {
+      });
+      document.querySelectorAll('a').forEach(link => {
         link.classList.remove('current_page');
+      });
+      document.getElementById(id).classList.add('active');
+      document.getElementById('nav-' + id).classList.add('current_page');
+      document.getElementById('navbar').classList.remove('show');
+      document.getElementById('hamburger').classList.remove('hidden');
+    }
+
+    function toggleMenu() {
+      document.getElementById('navbar').classList.toggle('show');
+      document.getElementById('hamburger').classList.toggle('hidden');
+    }
+
+    const seconds_left = new Date("Jun 6, 2026 17:00:00").getTime() - new Date().getTime();
+    const days_left = Math.floor(seconds_left / (1000 * 60 * 60 * 24));
+
+    document.getElementById("countdown").innerHTML = days_left + " days to go";
+
+    function handleHashChange() {
+      const hash = window.location.hash.substring(1);
+      if (hash && document.getElementById(hash)) {
+        showSection(hash);
+        return;
+      }
+      showSection('home');
+    }
+
+    window.addEventListener('load', handleHashChange);
+
+    function spawnPetals(count = 100) {
+      const container = document.body;
+
+      for (let i = 0; i < count; i++) {
+        const petal = document.createElement('img');
+        petal.src = 'img/flower_small.png';
+        petal.className = 'petal';
+        petal.style.left = Math.random() * 100 + 'vw';
+        petal.style.animationDuration = 2 + Math.random() * 3 + 's';
+        petal.style.transform = `rotate(${Math.random() * 360}deg)`;
+        container.appendChild(petal);
+
+        setTimeout(() => container.removeChild(petal), 6000);
+      }
+    }
+
+    let lastX, lastY, lastZ;
+    let shakeThreshold = 15;
+    let lastTime = new Date();
+
+    window.addEventListener('devicemotion', function (e) {
+      let acc = e.accelerationIncludingGravity;
+      if (!acc) return;
+
+      let currentTime = new Date();
+      if ((currentTime - lastTime) < 100) return;
+
+      let deltaX = acc.x - lastX;
+      let deltaY = acc.y - lastY;
+      let deltaZ = acc.z - lastZ;
+
+      let speed = Math.abs(deltaX + deltaY + deltaZ);
+      if (speed > shakeThreshold) {
+        spawnPetals();
+      }
+
+      lastX = acc.x;
+      lastY = acc.y;
+      lastZ = acc.z;
+      lastTime = currentTime;
     });
-    document.getElementById(id).classList.add('active');
-    document.getElementById('nav-'+id).classList.add('current_page');
-    document.getElementById('navbar').classList.remove('show');
-    document.getElementById('hamburger').classList.remove('hidden');
-  }
 
-  function toggleMenu() {
-    document.getElementById('navbar').classList.toggle('show');
-    document.getElementById('hamburger').classList.toggle('hidden');
-  }
-
-  const seconds_left = new Date("Jun 6, 2026 17:00:00").getTime() - new Date().getTime();
-  const days_left = Math.floor(seconds_left / (1000 * 60 * 60 * 24));
-
-  document.getElementById("countdown").innerHTML = days_left + " days to go";
-
-  function handleHashChange() {
-    const hash = window.location.hash.substring(1);
-    if (hash && document.getElementById(hash)) {
-      showSection(hash);
-      return;
-    } 
-    showSection('home');
-  }
-
-  window.addEventListener('load', handleHashChange);
-
-  function spawnPetals(count = 100) {
-    const container = document.body;
-
-    for (let i = 0; i < count; i++) {
-      const petal = document.createElement('img');
-      petal.src = 'img/flower_small.png';
-      petal.className = 'petal';
-      petal.style.left = Math.random() * 100 + 'vw';
-      petal.style.animationDuration = 2 + Math.random() * 3 + 's';
-      petal.style.transform = `rotate(${Math.random() * 360}deg)`;
-      container.appendChild(petal);
-
-      setTimeout(() => container.removeChild(petal), 6000);
-    }
-  }
-
-  let lastX, lastY, lastZ;
-  let shakeThreshold = 15;
-  let lastTime = new Date();
-
-  window.addEventListener('devicemotion', function (e) {
-    let acc = e.accelerationIncludingGravity;
-    if (!acc) return;
-
-    let currentTime = new Date();
-    if ((currentTime - lastTime) < 100) return;
-
-    let deltaX = acc.x - lastX;
-    let deltaY = acc.y - lastY;
-    let deltaZ = acc.z - lastZ;
-
-    let speed = Math.abs(deltaX + deltaY + deltaZ);
-    if (speed > shakeThreshold) {
-      spawnPetals();
-    }
-
-    lastX = acc.x;
-    lastY = acc.y;
-    lastZ = acc.z;
-    lastTime = currentTime;
-});
-
-</script>
-<script src="scripts/fslightbox.js">
-</script>
+  </script>
+  <script src="scripts/fslightbox.js">
+  </script>
 </body>
+
 </html>
