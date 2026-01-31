@@ -31,9 +31,11 @@
   <div class="nav-container">
     <nav id="navbar">
       <a onclick="showSection('home')" id="nav-home" href="#home">Home</a>
+      <a onclick="showSection('rsvp')" id="nav-rsvp" href="#rsvp">RSVP</a>
       <a onclick="showSection('our-story')" id="nav-our-story" href="#our-story">Our Story</a>
       <a onclick="showSection('wedding')" id="nav-wedding" href="#wedding">The Big Day</a>
       <a onclick="showSection('travel')" id="nav-travel" href="#travel">Travel</a>
+      <a href="https://withjoy.com/brandon-and-cathy/registry" target="_blank" rel="noopener noreferrer">Registry</a>
       <a onclick="showSection('faq')" id="nav-faq" href="#faq">FAQ</a>
     </nav>
   </div>
@@ -52,6 +54,24 @@
       </div>
       <img src="img/flowers_right.png" class="flower right" alt="Right flowers" loading="lazy">
     </div>
+  </section>
+
+  <section id="rsvp">
+    <h2 id="rsvp-title">RSVP</h2>
+    <div id="rsvp-widget"></div>
+    <script>
+      (function (w, d, s, o, f, js, fjs) {
+        w[o] = w[o] || function () { (w[o].q = w[o].q || []).push(arguments) };
+        js = d.createElement(s), fjs = d.getElementsByTagName(s)[0];
+        js.id = o; js.src = f; js.async = 1; fjs.parentNode.insertBefore(js, fjs);
+      }(window, document, 'script', 'oursvp', 'https://www.oursvp.app/widget/widget.js'));
+      oursvp('init', {
+        element: document.getElementById('rsvp-widget'),
+        eventId: 'VTWp41TmfoncYXkcxaXn',
+        showBackBtn: true,
+        language: 'english'
+      });
+    </script>
   </section>
 
   <section id="our-story">
@@ -175,10 +195,13 @@
     </div>
 
     <h3>Schedule</h3>
-    <!-- <div class="schedule-container">
+    <p>Doors open at <em>4:30 PM</em>. The ceremony begins promptly at <em>5:00 PM</em>. Please
+      arrive 15 minutes before the ceremony begins to park and be seated.</p>
+
+    <div class="schedule-container">
       <div class="schedule-item">
         <span class="time">4:30 PM</span>
-        <span class="event">Doors Open & Seating Begins</span>
+        <span class="event">Seating Begins</span>
       </div>
       <div class="schedule-item">
         <span class="time">5:00 PM</span>
@@ -192,10 +215,18 @@
         <span class="time">6:30 PM</span>
         <span class="event">Reception & Dinner</span>
       </div>
-    </div> -->
+      <div class="schedule-item">
+        <span class="time">10:00 PM</span>
+        <span class="event">Send Off</span>
+      </div>
+    </div>
 
-    <p>Doors open at <em>4:30 PM</em>. The ceremony begins promptly at <em>5:00 PM</em>. Please
-      arrive 15 minutes before the ceremony begins to park and be seated. Stay tuned for a more detailed itinerary!</p>
+    <p>Not ready to call it a night? We’re heading to <a href="https://maps.app.goo.gl/x5yp5Z1BfGCykDqq6"
+        target="_blank" rel="noopener noreferrer">Golden Lounge KTV</a> right after the send-off to keep the music
+      going!</p>
+
+    <p> It’s a short walking distance from the DoubleTree by Hilton Hotel Newark - Fremont and the shuttle will be
+      making a stop there on its way back.</p>
 
     <!-- <div class="download-section">
       <a href="#" class="download-btn" download>Download Schedule (PDF)</a>
@@ -265,6 +296,13 @@
       </ul>
       <p><em>Note: Please book by <strong class="booking-deadline">Friday May 8th, 2026</strong> to receive the
           discounted group rate.</em></p>
+      <p><strong>Hotel Shuttle Service:</strong></p>
+      <ul>
+        <li><strong>Hours:</strong> 7:00 AM - 10:00 PM daily (subject to availability).</li>
+        <li><strong>Local Area:</strong> Complimentary within a 5-mile radius (excluding residential).</li>
+        <li><strong>SJC Airport:</strong> Available for registered guests. <a href="tel:+15104908390">Call the
+            hotel</a> upon landing for pickup at Terminal A (Stop #8) or Terminal B (Stop #12).</li>
+      </ul>
     </div>
 
     <h3>Day-of Transportation</h3>
@@ -392,7 +430,8 @@
 
       <div class="faq-card">
         <h3 class="faq-question">What should I do if I have dietary restrictions?</h3>
-        <p class="faq-answer">Please let us know on your RSVP — we will do our best to accommodate!</p>
+        <p class="faq-answer">Please let us know on <a href="#rsvp" onclick="showSection('rsvp')">your RSVP</a> — we
+          will do our best to accommodate!</p>
       </div>
 
       <h3 class="faq-section-title">Attire & Weather</h3>
@@ -447,8 +486,12 @@
 
       <div class="faq-card">
         <h3 class="faq-question">Is there a wedding registry?</h3>
-        <p class="faq-answer">Your presence is the greatest gift. We're so grateful just to celebrate with you! For
-          those who are feeling generous and wish to give, stay tuned for our registry.</p>
+        <p class="faq-answer">Your presence is the greatest gift, and we are so grateful just to celebrate this day with
+          you! For those who have expressed a wish to give, we have <a
+            href="https://withjoy.com/brandon-and-cathy/registry" target="_blank" rel="noopener noreferrer">created a
+            registry here</a>. In keeping with our traditions, we will also have a box for red envelopes and cards on
+          the wedding day.
+        </p>
       </div>
 
     </div>
