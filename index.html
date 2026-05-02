@@ -31,7 +31,6 @@
   <div class="nav-container">
     <nav id="navbar">
       <a onclick="showSection('home')" id="nav-home" href="#home">Home</a>
-      <a onclick="showSection('rsvp')" id="nav-rsvp" href="#rsvp">RSVP</a>
       <a onclick="showSection('our-story')" id="nav-our-story" href="#our-story">Our Story</a>
       <a onclick="showSection('wedding')" id="nav-wedding" href="#wedding">The Big Day</a>
       <a onclick="showSection('travel')" id="nav-travel" href="#travel">Travel</a>
@@ -56,23 +55,7 @@
     </div>
   </section>
 
-  <section id="rsvp">
-    <h2 id="rsvp-title">RSVP</h2>
-    <div id="rsvp-widget"></div>
-    <script>
-      (function (w, d, s, o, f, js, fjs) {
-        w[o] = w[o] || function () { (w[o].q = w[o].q || []).push(arguments) };
-        js = d.createElement(s), fjs = d.getElementsByTagName(s)[0];
-        js.id = o; js.src = f; js.async = 1; fjs.parentNode.insertBefore(js, fjs);
-      }(window, document, 'script', 'oursvp', 'https://www.oursvp.app/widget/widget.js'));
-      oursvp('init', {
-        element: document.getElementById('rsvp-widget'),
-        eventId: 'VTWp41TmfoncYXkcxaXn',
-        showBackBtn: true,
-        language: 'english'
-      });
-    </script>
-  </section>
+
 
   <section id="our-story">
     <h2 id="story-title">Our Story</h2>
@@ -430,8 +413,8 @@
 
       <div class="faq-card">
         <h3 class="faq-question">What should I do if I have dietary restrictions?</h3>
-        <p class="faq-answer">Please let us know on <a href="#rsvp" onclick="showSection('rsvp')">your RSVP</a> — we
-          will do our best to accommodate!</p>
+        <p class="faq-answer">RSVP is now closed. If you have dietary restrictions, please reach out to us directly and
+          we will do our best to accommodate!</p>
       </div>
 
       <h3 class="faq-section-title">Attire & Weather</h3>
